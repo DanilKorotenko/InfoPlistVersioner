@@ -2,14 +2,18 @@
 import sys, plistlib
 
 plist = plistlib.readPlist("Info.plist");
-print "Bundle version:", plist["CFBundleVersion"];
+bundleVersion=int(plist["CFBundleVersion"]);
+print "Bundle version:", bundleVersion;
 
+# bundle version is ####
+bundleVersion=bundleVersion+1;
 
-# elif len(sys.argv) > 2: # we have some additional options
-# 	if sys.argv[1] == "copy":
-# 		sourceConfig = sys.argv[2]
-# 		destinationConfig = sys.argv[3]
-# 		pSource = plistlib.readPlist(sourceConfig);
-# 		pDestination = plistlib.readPlist(destinationConfig);
-# 		pDestination["kGTBDatabaseConfigServerKey"] = pSource["kGTBDatabaseConfigServerKey"];
-# 		plistlib.writePlist(pDestination, destinationConfig)
+plist["CFBundleVersion"]=str(bundleVersion);
+
+plistlib.writePlist(plist,"Info.plist");
+
+# bundle version is ####.##
+
+# bundle version is ####.##.##
+
+# bundle version is ####.##.##[d,a,b,fc][1-255]

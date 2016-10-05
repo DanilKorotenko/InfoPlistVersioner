@@ -19,9 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyrigh. All rights reserved.</string>
+	<string>2</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>com.product</key>
@@ -42,6 +40,8 @@
 			<string>com_Class_Client</string>
 		</dict>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.kpi.bsd</key>
